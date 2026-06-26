@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Save Our Wildlife</title>
+  <link rel="stylesheet" href="styles/wildlife.css" />
+</head>
+<body>
+  <main class="page">
+    <h1>Save Our Wildlife</h1>
+
+    <section class="video-card" aria-labelledby="video-title">
+      <h2 id="video-title" class="sr-only">Wildlife Promotional Video</h2>
+      <video
+        id="wildlifeVideo"
+        class="promo-video"
+        controls
+        preload="metadata"
+        playsinline
+        aria-describedby="video-description"
+      >
+        <source src="media/wildlife.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <p id="video-description" class="description">
+        Protecting habitats today helps preserve biodiversity for future generations.
+      </p>
+
+      <button id="videoActionBtn" class="action-btn" type="button" aria-controls="wildlifeVideo" aria-pressed="false">
+        Hide Video
+      </button>
+      <p id="statusMessage" class="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="scripts/wildlife.js"></script>
+</body>
+</html>
